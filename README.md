@@ -9,8 +9,9 @@ ZDOTDIR=$HOME/.config/zsh
 
 Then clone the repo to that location:
 ```zsh
-git clone https://github.com/bluedragon1221/zsh-config ~/.config/zsh
+git clone --recursive https://github.com/bluedragon1221/zsh-config ~/.config/zsh
 ```
+Make sure to tack on that `--recursive` to have it clone the submodules (plguins) too!
 
 And that's it!
 

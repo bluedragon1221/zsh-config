@@ -51,6 +51,5 @@ alias top=btop
 alias ls=exa
 
 # Fixing my muscle memory
-alias nvim=helix
 
 plug zsh-autosuggestions
