@@ -1,0 +1,12 @@
+[submodule "plugins/fast-syntax-highlighting"]
+	path = plugins/fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting
+[submodule "plugins/zsh-cdls"]
+	path = plugins/zsh-cdls
+	url = git@github.com:bluedragon1221/zsh-cdls
+[submodule "plugins/zsh-lambda-prompt"]
+	path = plugins/zsh-lambda-prompt
+	url = git@github.com:bluedragon1221/zsh-lambda-prompt
+[submodule "plugins/zsh-autosuggestions"]
+	path = plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
