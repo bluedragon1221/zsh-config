@@ -31,8 +31,9 @@ plug fast-syntax-highlighting
 # HISTORY
 HISTFILE=$XDG_STATE_HOME/zsh_history
 HISTSIZE=1000
-SAVEHIST=1000
+SAVEHIST=10000
 setopt appendhistory
+setopt HIST_IGNORE_ALL_DUPS
 
 # RUST ALTERNATIVES
 alias cat=bat
