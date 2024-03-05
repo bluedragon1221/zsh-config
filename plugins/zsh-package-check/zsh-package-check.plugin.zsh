@@ -2,24 +2,9 @@ is_command() {
   command -v $1 &>/dev/null
 }
 
-packages=$(cat <<EOF
-eza
-bat
-fd
-helix
-wget
-EOF)
-
-for i in $packages; do
-  if ! is_command $1; then
-      echo "You need to install $i"
-      exit 1
-  fi
-done
-
 if is_command eza; then
   alias ls='eza -1AF --icons --group-directories-first --ignore-glob=".git*"'
-  alias tree="exa -T"
+  alias tree="exa -Tl"
 else
   alias ls='ls -A1F --color=always --group-directories-first'
 fi
