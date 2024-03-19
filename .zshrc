@@ -9,6 +9,15 @@ plug() {
     fi
 }
 
+# Completion
+plug zsh-autocomplete
+autoload -U compinit; compinit
+zstyle ':completion:*' menu select
+bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
+bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+bindkey -M menuselect '\r' .accept-line
+# zstyle ':autocomplete:*' default-context history-incremental-search-backward
+
 alias wget="wget --no-hsts"
 LESSHISTSIZE=0
 
@@ -37,4 +46,5 @@ setopt HIST_IGNORE_ALL_DUPS
 
 plug zsh-package-check
 plug zsh-autosuggestions
+# plug zsh-autosuggestions
 plug zsh-broot
