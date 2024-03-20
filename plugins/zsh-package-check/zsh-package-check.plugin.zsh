@@ -15,7 +15,7 @@ if is_command bat; then
 fi
 
 if is_command hx || is_command helix; then
-  alias helix=hx
+  alias hx=helix
   export EDITOR=helix
   alias vim=hx
   alias nvim=hx
